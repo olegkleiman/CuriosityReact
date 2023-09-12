@@ -11,8 +11,6 @@ const App = () =>
     
         event.preventDefault();
 
-        const query = "home";
-
         const res = await axios.get("https://tlvsearch.azurewebsites.net/api/Search?q=" + prompt);
         console.log(res.data);
         setSearchResults(res.data)
