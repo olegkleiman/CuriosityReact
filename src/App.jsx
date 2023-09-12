@@ -34,7 +34,8 @@ const App = () =>
                 searchResults.map( (item, index) => {
                     return (<div className="searchItem" key={index}>
                                 <div>{item.title}</div>
-                                <a href={item.url}>Link</a>
+                                <div>{item.distance}</div>
+                                <a href={item.url} target='_blank'>Link</a>
                             </div>
                         )
                 })
